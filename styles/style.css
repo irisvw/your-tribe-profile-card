@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
+
+  --primary-color: rgb(231, 86, 86);
+  --secondary-color: rgb(228, 133, 146);
 }
 
 html {
@@ -11,8 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: open sans;
-  color: #10214e;
+  color: black;
 }
 
 article {
@@ -24,9 +27,9 @@ article {
   width: 50vw;
   max-width: 25em;
   min-width: 20em;
-  border-radius: 1rem;
-  background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  border-radius: 2rem;
+  background: var(--secondary-color);
+  background: linear-gradient(0deg, rgb(231, 86, 86) 40%, #fd8095 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -41,7 +44,7 @@ header {
 
 h1 {
   margin: 2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: rgb(255, 255, 255);
 }
 
 button {
@@ -53,16 +56,16 @@ button {
   padding: .25rem;
   border: none;
   border-radius: 50%;
-  background: rgba(0,239,255,1);
+  background: rgb(255, 255, 255);
   transform: scale(.8);
   transition: .25s;
 }
 button:focus {
   outline: none;
-  background: #202592;
+  background: pink;
 }
 button:focus svg {
-  stroke: rgba(0,239,255,1);
+  stroke: black;
 }
 
 svg {
@@ -139,7 +142,7 @@ article > p {
   width: 100%;
   margin-top: 0;
   padding: 3rem 2rem;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 2rem 2rem;
   text-align: center;
   background: rgba(255,255,255, 0.5);
 }
