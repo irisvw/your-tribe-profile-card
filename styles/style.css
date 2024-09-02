@@ -83,12 +83,13 @@ button svg:nth-of-type(2) {
 img {
   position: relative;
   top: 2rem;
-  width: 10em;
-  height: auto;
+  width: 50%;
+  height: 200px;
   border: 5px solid #fff;
-  border-radius: 10em;
+  border-radius: 10%;
   box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
   transition: .25s .15s;
+  object-fit: cover;
 }
 
 dl {
