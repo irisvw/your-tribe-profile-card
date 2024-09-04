@@ -110,7 +110,7 @@ article {
 }
 
 main>* {
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 
 img {
@@ -167,6 +167,11 @@ ul {
 .logo {
   height: 48px;
   width: 48px;
+  transition: .2s ease-in-out;
+}
+.logo:hover {
+  height: 56px;
+  width: 56px;
 }
 
 .icon {
