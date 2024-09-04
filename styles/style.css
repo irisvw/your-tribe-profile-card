@@ -18,6 +18,15 @@ body {
   color: black;
 }
 
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(6, 120px);
@@ -35,6 +44,22 @@ main {
   align-items: start;
   text-align: center;
   transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(6, 120px);
+    grid-template-areas:
+      "art4   art1     art2     art8  "
+      "art9   art3     art3     art5  "
+      "art13  art-main art-main art5  "
+      "art7   art-main art-main art10 "
+      "art7   art12    art14    art14 "
+      "art6   art15    art16    art11 "
+    ;
+  }
+
 }
 
 article {
@@ -80,15 +105,6 @@ button {
 ul {
   list-style: none;
   text-align: left;
-}
-
-h1 {
-  font-size: 18px;
-}
-
-h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
 }
 
 .circle {
