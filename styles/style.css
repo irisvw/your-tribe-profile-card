@@ -105,6 +105,10 @@ article {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
 .spin {
   rotate: 360deg;
 }
